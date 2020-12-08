@@ -8,8 +8,16 @@
 
 import Foundation
 
-struct Diary : Decodable{
+
+
+struct Diary : Decodable,Encodable{
     var id, title, content, date: String
     var isShow : Bool? = false
+    
+    
+    var DiaryListRepresentation : [String:String] {
+        return ["id" : id, "title" : title, "content" : content, "date" : date]
+    }
+    
 }
 

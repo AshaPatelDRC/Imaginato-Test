@@ -36,6 +36,7 @@ class DetailVC: UIViewController {
             arr[index] = objDiary!
         }
         viewModel.arrDiary.onNext(Sectionfilter(arr: arr))
+        SaveDataToUserDefaults()
         self.navigationController?.popViewController(animated: true)
     }
 }

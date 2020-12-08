@@ -10,20 +10,33 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-let viewModel = DiaryViewModel()
+var viewModel = DiaryViewModel()
 
 
 class HomeVC: UIViewController {
     
     @IBOutlet weak var tblHome : UITableView!
     
-    private let bag = DisposeBag()
+    let bag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tblHome.rx.setDelegate(self).disposed(by: bag)
         
-        viewModel.fetchData()
+        
+        FetchDataToUserDefaults()
+        
+        if let value = try? viewModel.arrDiary.value(){
+
+            if value.count == 0{
+                
+                if Reachability.isConnectedToNetwork(){
+                    viewModel.fetchData()
+                }else{
+                    showNetworkNotAvailblePopup(vc: self)
+                }
+            }
+        }
         
         bindTableView()
         // Do any additional setup after loading the view.
@@ -68,6 +81,7 @@ class HomeVC: UIViewController {
                                 arr.remove(at: index)
                             }
                             viewModel.arrDiary.onNext(Sectionfilter(arr: arr))
+                            SaveDataToUserDefaults()
                     }
                 }
             })

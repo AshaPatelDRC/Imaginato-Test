@@ -10,6 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+
 class DiaryViewModel {
     
     let arrDiary = BehaviorSubject(value: [Diary]())
@@ -22,8 +23,9 @@ class DiaryViewModel {
                 let arrTemp = try JSONDecoder().decode([Diary].self, from: data)
                 
                 let diary = arrTemp.sorted(by: { $0.date.toDate()?.compare($1.date.toDate() ?? Date()) == .orderedDescending })
-
                 self.arrDiary.onNext(Sectionfilter(arr: diary))
+                SaveDataToUserDefaults()
+
                } catch let error {
                  print(error)
                }
@@ -50,3 +52,34 @@ func Sectionfilter(arr : [Diary]) -> [Diary]{
     }
     return arrTemp
 }
+
+
+func SaveDataToUserDefaults() {
+    
+    if let value = try? viewModel.arrDiary.value(){
+        do {
+           let jsonData = try JSONEncoder().encode(value)
+           UserDefaults.standard.set(jsonData, forKey: "diary")
+    
+        } catch let error {
+          print(error)
+        }
+    }
+
+}
+
+func FetchDataToUserDefaults(){
+    
+    if let diaryData = UserDefaults.standard.object(forKey: "diary") as? Data{
+        do {
+        let arrTemp = try JSONDecoder().decode([Diary].self, from: diaryData)
+        let diary = arrTemp.sorted(by: { $0.date.toDate()?.compare($1.date.toDate() ?? Date()) == .orderedDescending })
+        viewModel.arrDiary.onNext(Sectionfilter(arr: diary))
+        } catch let error {
+            print(error)
+        }
+    }
+}
+
+
+
