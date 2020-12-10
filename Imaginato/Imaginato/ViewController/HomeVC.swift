@@ -12,7 +12,6 @@ import RxCocoa
 
 var viewModel = DiaryViewModel()
 
-
 class HomeVC: UIViewController {
     
     @IBOutlet weak var tblHome : UITableView!
@@ -22,7 +21,6 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tblHome.rx.setDelegate(self).disposed(by: bag)
-        
         
         FetchDataToUserDefaults()
         

@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		236967AC70DD58DC45058FB0 /* Pods_Imaginato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C6F60C18B3CA73578D1A79 /* Pods_Imaginato.framework */; };
 		A398D30D257F737D007F5A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398D30C257F737D007F5A76 /* AppDelegate.swift */; };
 		A398D30F257F737D007F5A76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398D30E257F737D007F5A76 /* SceneDelegate.swift */; };
 		A398D311257F737D007F5A76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398D310257F737D007F5A76 /* ViewController.swift */; };
@@ -14,9 +15,17 @@
 		A398D317257F737D007F5A76 /* Imaginato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A398D315257F737D007F5A76 /* Imaginato.xcdatamodeld */; };
 		A398D319257F737E007F5A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A398D318257F737E007F5A76 /* Assets.xcassets */; };
 		A398D31C257F737E007F5A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A398D31A257F737E007F5A76 /* LaunchScreen.storyboard */; };
+		A398D325257F7BFE007F5A76 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398D324257F7BFE007F5A76 /* HomeVC.swift */; };
+		A398D327257F7C0E007F5A76 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398D326257F7C0E007F5A76 /* DetailVC.swift */; };
+		A398D32A257F7C7F007F5A76 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398D329257F7C7F007F5A76 /* HomeCell.swift */; };
+		A398D32D257F7D22007F5A76 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398D32C257F7D22007F5A76 /* Global.swift */; };
+		A398D330257F7F5F007F5A76 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398D32F257F7F5F007F5A76 /* ViewModel.swift */; };
+		A398D333257F7F81007F5A76 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A398D332257F7F81007F5A76 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BA95298352DEC49FDCE7535 /* Pods-Imaginato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imaginato.release.xcconfig"; path = "Target Support Files/Pods-Imaginato/Pods-Imaginato.release.xcconfig"; sourceTree = "<group>"; };
+		4454AFCC406C19432F11DB41 /* Pods-Imaginato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imaginato.debug.xcconfig"; path = "Target Support Files/Pods-Imaginato/Pods-Imaginato.debug.xcconfig"; sourceTree = "<group>"; };
 		A398D309257F737D007F5A76 /* Imaginato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Imaginato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A398D30C257F737D007F5A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A398D30E257F737D007F5A76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +35,13 @@
 		A398D318257F737E007F5A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A398D31B257F737E007F5A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A398D31D257F737E007F5A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A398D324257F7BFE007F5A76 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A398D326257F7C0E007F5A76 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		A398D329257F7C7F007F5A76 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		A398D32C257F7D22007F5A76 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		A398D32F257F7F5F007F5A76 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A398D332257F7F81007F5A76 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F8C6F60C18B3CA73578D1A79 /* Pods_Imaginato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imaginato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236967AC70DD58DC45058FB0 /* Pods_Imaginato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		761386FAC71D0A4786E94DFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4454AFCC406C19432F11DB41 /* Pods-Imaginato.debug.xcconfig */,
+				1BA95298352DEC49FDCE7535 /* Pods-Imaginato.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A398D300257F737D007F5A76 = {
 			isa = PBXGroup;
 			children = (
 				A398D30B257F737D007F5A76 /* Imaginato */,
 				A398D30A257F737D007F5A76 /* Products */,
+				761386FAC71D0A4786E94DFB /* Pods */,
+				D3DF6987AB80DE1F546F7FC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +86,11 @@
 		A398D30B257F737D007F5A76 /* Imaginato */ = {
 			isa = PBXGroup;
 			children = (
+				A398D331257F7F78007F5A76 /* Model */,
+				A398D32E257F7F52007F5A76 /* ViewModel */,
+				A398D32B257F7CF7007F5A76 /* Global */,
+				A398D328257F7C71007F5A76 /* Cell */,
+				A398D323257F7BD3007F5A76 /* ViewController */,
 				A398D30C257F737D007F5A76 /* AppDelegate.swift */,
 				A398D30E257F737D007F5A76 /* SceneDelegate.swift */,
 				A398D310257F737D007F5A76 /* ViewController.swift */,
@@ -70,6 +103,55 @@
 			path = Imaginato;
 			sourceTree = "<group>";
 		};
+		A398D323257F7BD3007F5A76 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A398D324257F7BFE007F5A76 /* HomeVC.swift */,
+				A398D326257F7C0E007F5A76 /* DetailVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A398D328257F7C71007F5A76 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A398D329257F7C7F007F5A76 /* HomeCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A398D32B257F7CF7007F5A76 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				A398D32C257F7D22007F5A76 /* Global.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		A398D32E257F7F52007F5A76 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A398D32F257F7F5F007F5A76 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A398D331257F7F78007F5A76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A398D332257F7F81007F5A76 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D3DF6987AB80DE1F546F7FC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8C6F60C18B3CA73578D1A79 /* Pods_Imaginato.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A398D320257F737E007F5A76 /* Build configuration list for PBXNativeTarget "Imaginato" */;
 			buildPhases = (
+				235DF701572C8E8D6FF57188 /* [CP] Check Pods Manifest.lock */,
 				A398D305257F737D007F5A76 /* Sources */,
 				A398D306257F737D007F5A76 /* Frameworks */,
 				A398D307257F737D007F5A76 /* Resources */,
+				3758D996A978F1801BB78ECF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +220,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		235DF701572C8E8D6FF57188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Imaginato-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3758D996A978F1801BB78ECF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Imaginato/Pods-Imaginato-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Imaginato/Pods-Imaginato-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Imaginato/Pods-Imaginato-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A398D305257F737D007F5A76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A398D32D257F7D22007F5A76 /* Global.swift in Sources */,
+				A398D330257F7F5F007F5A76 /* ViewModel.swift in Sources */,
 				A398D311257F737D007F5A76 /* ViewController.swift in Sources */,
+				A398D32A257F7C7F007F5A76 /* HomeCell.swift in Sources */,
+				A398D325257F7BFE007F5A76 /* HomeVC.swift in Sources */,
+				A398D333257F7F81007F5A76 /* Model.swift in Sources */,
 				A398D30D257F737D007F5A76 /* AppDelegate.swift in Sources */,
 				A398D30F257F737D007F5A76 /* SceneDelegate.swift in Sources */,
 				A398D317257F737D007F5A76 /* Imaginato.xcdatamodeld in Sources */,
+				A398D327257F7C0E007F5A76 /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +418,7 @@
 		};
 		A398D321257F737E007F5A76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4454AFCC406C19432F11DB41 /* Pods-Imaginato.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +437,7 @@
 		};
 		A398D322257F737E007F5A76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA95298352DEC49FDCE7535 /* Pods-Imaginato.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
